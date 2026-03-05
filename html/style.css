@@ -1,0 +1,110 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+.portfolio-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+h1 {
+  
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56,189,248,0.6);
+}
+/* ===== HEADER GLOW ===== */
+
+h2{
+
+  
+  font-size:22px;
+  color:rgb(208, 219, 219);
+  margin-bottom:15px;
+  text-shadow:0 0 5px #0ff;
+  letter-spacing: 2px;
+}
+a{font-size:18px;
+  margin: 10px 0;
+  text-decoration:none;
+  color:rgb(235, 240, 240);
+  transition:0.3s;
+}
+h4{
+  font-size:18px;
+  color:rgb(200, 210, 210);
+  margin-bottom:10px;
+  text-decoration: darkblue;
+}
+header{
+  text-align:center;
+  padding:40px;
+  font-size:28px;
+  font-weight:bold;
+  letter-spacing:2px;
+  background: rgba(0,0,0,0.4);
+  box-shadow:0 0 25px cyan;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{ box-shadow:0 0 10px cyan;}
+  to{ box-shadow:0 0 35px #00ffff;}
+}
+
+/* ===== NAV LINKS COOL BUTTON ===== */
+nav a{
+  text-decoration:none;
+  color:white;
+  padding:12px 22px;
+  margin:8px;
+  border:2px solid cyan;
+  border-radius:30px;
+  transition:0.4s;
+  display:inline-block;
+}
+
+/* hover animation */
+nav a:hover{
+  background:cyan;
+  color:black;
+  transform:scale(1.15);
+  box-shadow:0 0 20px cyan;
+}
+
+/* ===== SECTION CARD STYLE ===== */
+section{
+  width:80%;
+  margin:60px auto;
+  padding:35px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow:0 0 30px rgba(0,255,255,0.25);
+    transition:0.4s;
+}
+
+/* hover animation */
+section:hover{
+  box-shadow:0 0 50px rgba(0,255,255,0.5);
+  transform:translateY(-10px);
+}
+/* ===== FOOTER STYLE ===== */
+footer{ 
+  text-align:center;
+  padding:20px;
+  background: rgba(0,0,0,0.4);
+  box-shadow:0 0 15px cyan;
+  animation: glow 2s infinite alternate;
+}

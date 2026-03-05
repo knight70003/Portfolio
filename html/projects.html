@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tushar Verma | PROJECT PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56,189,248,0.6);
+}
+
+.portfolio-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.project-card h2 {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.tech {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+ul li {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-top: 60px;
+}
+
+  </style>
+</head>
+<body>  <h1>🚀 Project Work</h1>  <div class="portfolio-container"><div class="project-card">
+  <h2><i class='bx bx-code-alt icon'></i> Sudoku Solver — Algorithm-Based System (C)</h2>
+  <p>Developed a Sudoku solver using backtracking and recursion for automatic puzzle computation.</p>
+  <div class="tech">Tech Stack: C Programming</div>
+  <ul>
+    <li>✔️ Recursive algorithm with efficient solving</li>
+    <li>✔️ User-input grid support</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h2><i class='bx bxl-django icon'></i> TwiAngo — Social Web App (Django + Python)</h2>
+  <p>Full-stack social media app for sharing posts and images with authentication & admin control.</p>
+  <div class="tech">Tech Stack: Django, Python, HTML, CSS, Bootstrap</div>
+  <ul>
+    <li>✔️ Secure user login & profile management</li>
+    <li>✔️ Admin dashboard for content management</li>
+    <li>✔️ Responsive, modern UI</li>
+  </ul>
+  <a href="https://github.com/knight70003" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h2><i class='bx bx-desktop icon'></i> Python GUI Applications (Tkinter)</h2>
+  <p>Collection of GUI-based desktop apps: Text-to-Speech, Digital Clock, Tic Tac Toe Game.</p>
+  <div class="tech">Tech Stack: Python, Tkinter</div>
+    <ul>
+        <li>✔️ Text-to-Speech Converter with voice selection</li>
+        <li>✔️ Real-time Digital Clock with customizable themes</li>
+        <li>✔️ Interactive Tic Tac Toe game with win detection</li>
+  </ul>
+  <a href="https://github.com/knight70003" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h2><i class='bx bxl-nodejs icon'></i> Calculator Web App — Node.js + Express</h2>
+  <p>Dynamic calculator web app performing backend arithmetic operations using Express routes.</p>
+  <div class="tech">Tech Stack: Node.js, Express.js, HTML, CSS</div>
+    <ul>
+          <li>✔️ Supports basic operations: +, -, *, /</li>
+          <li>✔️ Clean UI with responsive design</li>
+            <li>✔️ Server-side logic for calculations</li>
+     </ul>
+  <a href="https://github.com/knight70003" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h2><i class='bx bx-user icon'></i> User Management System — Node.js + MongoDB</h2>
+  <p>Developed REST API with full CRUD operations, input validation, and MongoDB integration.</p>
+  <div class="tech">Tech Stack: Node.js, Express.js, MongoDB, Postman</div>
+    <ul>
+        <li>✔️ RESTful API design</li>
+        <li>✔️ MongoDB for data persistence</li>
+        <li>✔️ Postman for testing endpoints</li>
+    </ul>
+  <a href="https://github.com/knight70003" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h2><i class='bx bx-data icon'></i> Road Accident Data Analysis — SQL Project</h2>
+  <p>Analyzed accident dataset using SQL to identify patterns, high-risk cities, and cause trends.</p>
+  <div class="tech">Tech Stack: SQL, MySQL, Data Analytics</div>
+    <ul>
+        <li>✔️ Complex SQL queries for data insights</li>
+        <li>✔️ Identified top accident-prone cities</li>
+        <li>✔️ Analyzed common causes and time patterns</li>
+    </ul>
+  <a href="https://github.com/knight70003" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+  </div>  <footer>
+    © 2026 Tushar Verma | Built with 💙 and Code
+  </footer></body>
+</html>
