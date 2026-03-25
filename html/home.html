@@ -3,31 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Tushar Verma - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   
-  
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="typing-demo">Hi, I'm <span class="highlight">Tushar Verma</span></h1>
+            <p class="hero-subtitle">Computer Science Postgraduate | Backend Developer | Python Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn-primary">Skills</a>
+                <a href="#about" class="btn-primary">About Me</a>
+                <a href="/projects" class="btn-secondary">View Projects</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section (Reduced) -->
     <section id="about">
         <h1>About Me</h1>
-        <h4>I am a Computer Science postgraduate student passionate about backend development, Python programming, and building real-world software applications.
-        I enjoy solving problems through code and have developed projects across multiple technologies including C, Python, Django, and Node.js.</h4>
-        <h4> My work includes algorithm-based solutions like a Sudoku Solver using backtracking in C, full-stack web applications 
-            built with Django featuring authentication and dynamic content, and several Python GUI tools such as a text-to-speech converter, digital clock, and interactive games.
-             Alongside this, I have also built backend-focused Node.js projects such as user management systems and 
-             REST-style applications, gaining practical experience in server-side logic, APIs, and database connectivity.</h4>
-
-
-<h4>Technically, I work with Python, JavaScript, Node.js, C, PHP, SQL, HTML, CSS, and Bootstrap, and have experience using MySQL and MongoDB databases. I also use Pandas, NumPy, Matplotlib, Power BI, and Tableau for data analysis and visualization.</h4>
-
-
-<h4>I am a curious learner, detail-oriented problem solver, and adaptive team player currently seeking opportunities in Python development, backend engineering, AI, or data-related roles where I can continue learning while contributing to impactful real-world projects.</h4>
-
+        <div class="about-content">
+            <p>I am a Computer Science postgraduate passionate about backend development, Python, and building real-world applications. Experienced in C, Django, Node.js, and data tools like Pandas & Tableau.</p>
+            <p>Detail-oriented problem solver seeking opportunities in Python development, backend engineering, or data roles.</p>
+        </div>
     </section>
-<footer>
-        <p>©  Tushar Verma | All rights reserved </p>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python, Django</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="95"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <h3>Web Development
+                    (HTML5, CSS3, JavaScript / Node.js)</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>C, java</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL / MongoDB</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Analysis (Pandas, NumPy)</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Visualization (Tableau, Power BI, Matplot Lib, Seaborn)</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Tushar Verma | All rights reserved</p>
     </footer>
-   
+
+    <script>
+        // Typing animation
+        const text = "Hi, I'm Tushar Verma";
+        let i = 0;
+        const typingDemo = document.querySelector('.typing-demo');
+        function typeWriter() {
+            if (i < text.length) {
+                typingDemo.innerHTML = text.slice(0, i + 1) + '|';
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                typingDemo.innerHTML = text;
+            }
+        }
+        window.onload = typeWriter;
+
+        // Skill bars animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progress = entry.target.querySelector('.skill-progress');
+                    const width = progress.getAttribute('data-width');
+                    progress.style.width = width + '%';
+                }
+            });
+        });
+        document.querySelectorAll('.skill-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
+
