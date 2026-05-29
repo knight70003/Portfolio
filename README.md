@@ -28,7 +28,7 @@ Frontend - HTML5, CSS3, JavaScript Icons - Font Awesome 6.4.0 Animations - Pure 
 
 Project Structure
 
-portfolio/ ├── index.html # Main HTML file ├── style.css # Stylesheet ├── images/ # Project images (optional) ├── favicon.ico # Website favicon └── README.md # This file
+portfolio/ ├── HTML #  HTML files ├── style.css # Stylesheet ├── images/ # Project images (optional) ├── favicon.ico # Website favicon └── README.md # This file
 
 Installation
 
